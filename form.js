@@ -6,6 +6,7 @@ function getDate (){
     var phone = document.getElementById("phone").value;
     var address = document.getElementById("address").value;
    
+    document.getElementById("dates").setAttribute("class", "card");
     var element = document.createElement("p");
     var content= document.createTextNode("First Name:"+ " "+firstName)
     element.appendChild(content)
