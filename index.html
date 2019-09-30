@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>User Info</title>
-    <script type="text/javascript" src="formulario.js"></script>
+    <script type="text/javascript" src="form.js"></script>
 </head>
 <body>
     
@@ -31,33 +31,9 @@
             <input type="address"id="address">
         </fieldset>
      
-        <input class="btn btn-primary ml-3 mt-3" type="button" onclick="getDate()" onclick="makeNode()" value="Guardar">
+        <input class="btn btn-primary ml-3 mt-3" type="button" onclick="getDate()" value="Save">
     
-        <div id="datos"></div>
-        
+        <div id="dates"></div>
 
-    <script>
-       function makeNode(){
-        var elemento = document.createElement("p");
-        var contenido= document.createTextNode("First Name:")
-        elemento.appendChild(contenido)
-        document.getElementById("datos").appendChild(elemento);
-
-        var elemento = document.createElement("p");
-        var contenido= document.createTextNode("Last Name:")
-        elemento.appendChild(contenido)
-        document.getElementById("datos").appendChild(elemento);
-        
-        var elemento = document.createElement("p");
-        var contenido= document.createTextNode("Phone Number:")
-        elemento.appendChild(contenido)
-        document.getElementById("datos").appendChild(elemento);
-        
-        var elemento = document.createElement("p");
-        var contenido= document.createTextNode("Address:")
-        elemento.appendChild(contenido)
-        document.getElementById("datos").appendChild(elemento);
-       }
-    </script>
 </body>
 </html>
